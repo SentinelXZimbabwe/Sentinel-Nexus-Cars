@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Nexus Cars | List Your Car for Sale</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: 
+                linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+                url("logo/logo.png") no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header img {
+            width: 140px;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #00b7ff;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 1rem;
+            color: #cccccc;
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+        }
+
+        .action-buttons a {
+            display: inline-block;
+            margin: 8px;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        .list-btn {
+            background: #00b7ff;
+            color: #000;
+        }
+
+        .view-btn {
+            background: transparent;
+            color: #00b7ff;
+            border: 2px solid #00b7ff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        h2 {
+            color: #00b7ff;
+            margin-top: 0;
+        }
+
+        ul {
+            line-height: 1.9;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li i {
+            color: #00b7ff;
+            margin-right: 8px;
+        }
+
+        .bank-box {
+            background: rgba(255,255,255,0.05);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .bank-box p i {
+            width: 22px;
+            color: #00b7ff;
+        }
+
+        form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            margin-top: 20px;
+            width: 100%;
+            padding: 14px;
+            font-size: 1rem;
+            background: #00b7ff;
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+
+    <script>
+        function sendToWhatsApp() {
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const car = document.getElementById("car").value;
+            const message = document.getElementById("message").value;
+
+            const text =
+                "🚗 SENTINEL NEXUS CARS – POP SUBMISSION\n\n" +
+                "Full Name: " + name + "\n" +
+                "Phone Number: " + phone + "\n" +
+                "Car Details: " + car + "\n\n" +
+                message + "\n\n" +
+                "I confirm I am the rightful owner and will send:\n" +
+                "- Proof of Payment\n" +
+                "- Up to 10 car images\n" +
+                "- Proof of ownership";
+
+            window.open(
+                "https://wa.me/263787556929?text=" + encodeURIComponent(text),
+                "_blank"
+            );
+        }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <img src="logo/logo.png" alt="Sentinel Nexus Cars Logo">
+    <h1>Sentinel Nexus Cars</h1>
+    <p>Secure Vehicle Listings Platform</p>
+
+    <div class="action-buttons">
+        <a href="#list" class="list-btn">
+            <i class="fas fa-plus-circle"></i> List Your Car
+        </a>
+
+        <a href="car-listings.html" class="view-btn">
+            <i class="fas fa-car"></i> View Car Listings
+        </a>
+    </div>
+</header>
+
+<div class="container" id="list">
+
+    <div class="card">
+        <h2><i class="fas fa-info-circle"></i> Listing Rules</h2>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> Only rightful car owners may list</li>
+            <li><i class="fas fa-dollar-sign"></i> $2.00 per vehicle listed</li>
+            <li><i class="fas fa-file-shield"></i> Ownership verification required</li>
+            <li><i class="fas fa-ban"></i> Fraudulent listings are rejected</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2><i class="fas fa-university"></i> Payment Details</h2>
+
+        <div class="bank-box">
+            <p><i class="fas fa-building-columns"></i> <strong>Bank:</strong> BancABC</p>
+            <p><i class="fas fa-building"></i> <strong>Account Name:</strong> Sentinel Nexus Systems PBC</p>
+            <p><i class="fas fa-hashtag"></i> <strong>Account Number:</strong> 92348806602321</p>
+            <p><i class="fas fa-location-dot"></i> <strong>Branch:</strong> Bulawayo</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2><i class="fab fa-whatsapp"></i> Send POP & Details</h2>
+
+        <form onsubmit="event.preventDefault(); sendToWhatsApp();">
+            <label>Full Name</label>
+            <input type="text" id="name" required>
+
+            <label>Phone Number</label>
+            <input type="text" id="phone" required>
+
+            <label>Car Details</label>
+            <input type="text" id="car" required>
+
+            <label>Message</label>
+            <textarea id="message" rows="4"></textarea>
+
+            <button class="submit-btn" type="submit">
+                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+            </button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    © Sentinel Nexus Cars · By Sentinel Nexus Systems PBC
+</footer>
+
+</body>
+</html>

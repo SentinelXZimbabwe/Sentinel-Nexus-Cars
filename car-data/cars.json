@@ -1,0 +1,254 @@
+{
+  "dealerships": [
+    {
+      "id": "bulawayo-motors",
+      "name": "Bulawayo Motors",
+      "location": "Bulawayo",
+      "verified": true,
+      "contact": "+263 77 111 2222",
+      "cars": [
+        {
+          "id": "bm-001",
+          "make": "Toyota",
+          "model": "Hilux",
+          "year": 2018,
+          "price_usd": 18500,
+          "images": [
+            "car-data/images/bulawayo-motors/hilux-1.jpg",
+            "car-data/images/bulawayo-motors/hilux-2.jpg"
+          ]
+        },
+        {
+          "id": "bm-002",
+          "make": "Toyota",
+          "model": "Fortuner",
+          "year": 2017,
+          "price_usd": 21000,
+          "images": [
+            "car-data/images/bulawayo-motors/fortuner-1.jpg"
+          ]
+        },
+        {
+          "id": "bm-003",
+          "make": "Mazda",
+          "model": "BT-50",
+          "year": 2019,
+          "price_usd": 19500,
+          "images": [
+            "car-data/images/bulawayo-motors/bt50-1.jpg"
+          ]
+        },
+        {
+          "id": "bm-004",
+          "make": "Isuzu",
+          "model": "D-Max",
+          "year": 2016,
+          "price_usd": 16500,
+          "images": [
+            "car-data/images/bulawayo-motors/dmax-1.jpg"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "nexus-autos",
+      "name": "Nexus Auto Traders",
+      "location": "Harare",
+      "verified": true,
+      "contact": "+263 78 333 4444",
+      "cars": [
+        {
+          "id": "na-001",
+          "make": "BMW",
+          "model": "320i",
+          "year": 2016,
+          "price_usd": 13200,
+          "images": [
+            "car-data/images/nexus-autos/bmw320-1.jpg"
+          ]
+        },
+        {
+          "id": "na-002",
+          "make": "Mercedes-Benz",
+          "model": "C200",
+          "year": 2015,
+          "price_usd": 14500,
+          "images": [
+            "car-data/images/nexus-autos/c200-1.jpg"
+          ]
+        },
+        {
+          "id": "na-003",
+          "make": "Audi",
+          "model": "A4",
+          "year": 2017,
+          "price_usd": 15800,
+          "images": [
+            "car-data/images/nexus-autos/a4-1.jpg"
+          ]
+        },
+        {
+          "id": "na-004",
+          "make": "Volkswagen",
+          "model": "Golf 7",
+          "year": 2018,
+          "price_usd": 16200,
+          "images": [
+            "car-data/images/nexus-autos/golf7-1.jpg"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "matobo-cars",
+      "name": "Matobo Cars",
+      "location": "Gwanda",
+      "verified": false,
+      "contact": "+263 77 555 6666",
+      "cars": [
+        {
+          "id": "mc-001",
+          "make": "Honda",
+          "model": "Fit",
+          "year": 2014,
+          "price_usd": 6200,
+          "images": [
+            "car-data/images/matobo-cars/fit-1.jpg"
+          ]
+        },
+        {
+          "id": "mc-002",
+          "make": "Toyota",
+          "model": "Vitz",
+          "year": 2015,
+          "price_usd": 5800,
+          "images": [
+            "car-data/images/matobo-cars/vitz-1.jpg"
+          ]
+        },
+        {
+          "id": "mc-003",
+          "make": "Nissan",
+          "model": "March",
+          "year": 2016,
+          "price_usd": 5400,
+          "images": [
+            "car-data/images/matobo-cars/march-1.jpg"
+          ]
+        },
+        {
+          "id": "mc-004",
+          "make": "Suzuki",
+          "model": "Swift",
+          "year": 2017,
+          "price_usd": 7200,
+          "images": [
+            "car-data/images/matobo-cars/swift-1.jpg"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "elite-rides",
+      "name": "Elite Rides Zimbabwe",
+      "location": "Harare",
+      "verified": true,
+      "contact": "+263 71 777 8888",
+      "cars": [
+        {
+          "id": "er-001",
+          "make": "Range Rover",
+          "model": "Evoque",
+          "year": 2018,
+          "price_usd": 29500,
+          "images": [
+            "car-data/images/elite-rides/evoque-1.jpg"
+          ]
+        },
+        {
+          "id": "er-002",
+          "make": "Lexus",
+          "model": "RX350",
+          "year": 2017,
+          "price_usd": 26500,
+          "images": [
+            "car-data/images/elite-rides/rx350-1.jpg"
+          ]
+        },
+        {
+          "id": "er-003",
+          "make": "Toyota",
+          "model": "Land Cruiser Prado",
+          "year": 2016,
+          "price_usd": 28000,
+          "images": [
+            "car-data/images/elite-rides/prado-1.jpg"
+          ]
+        },
+        {
+          "id": "er-004",
+          "make": "Mercedes-Benz",
+          "model": "GLE",
+          "year": 2019,
+          "price_usd": 33500,
+          "images": [
+            "car-data/images/elite-rides/gle-1.jpg"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "city-drive",
+      "name": "City Drive Autos",
+      "location": "Bulawayo",
+      "verified": false,
+      "contact": "+263 78 999 0000",
+      "cars": [
+        {
+          "id": "cd-001",
+          "make": "Ford",
+          "model": "Ranger",
+          "year": 2017,
+          "price_usd": 19800,
+          "images": [
+            "car-data/images/city-drive/ranger-1.jpg"
+          ]
+        },
+        {
+          "id": "cd-002",
+          "make": "Chevrolet",
+          "model": "Trailblazer",
+          "year": 2016,
+          "price_usd": 18200,
+          "images": [
+            "car-data/images/city-drive/trailblazer-1.jpg"
+          ]
+        },
+        {
+          "id": "cd-003",
+          "make": "Toyota",
+          "model": "Corolla Axio",
+          "year": 2015,
+          "price_usd": 8200,
+          "images": [
+            "car-data/images/city-drive/axio-1.jpg"
+          ]
+        },
+        {
+          "id": "cd-004",
+          "make": "Mazda",
+          "model": "Atenza",
+          "year": 2016,
+          "price_usd": 9800,
+          "images": [
+            "car-data/images/city-drive/atenza-1.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}
