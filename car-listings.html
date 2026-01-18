@@ -101,6 +101,8 @@
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            flex-direction: column;
         }
 
         .car-card img {
@@ -111,6 +113,7 @@
 
         .car-body {
             padding: 12px;
+            flex-grow: 1;
         }
 
         .car-title {
@@ -128,6 +131,21 @@
             font-size: 1rem;
             font-weight: bold;
             color: #00b7ff;
+        }
+
+        .contact-btn {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background: #00b7ff;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .contact-btn i {
+            margin-right: 6px;
         }
 
         footer {
@@ -166,36 +184,54 @@
                 const dealerCard = document.createElement("div");
                 dealerCard.className = "dealer-card";
 
-                const badge = dealer.verified
-                    ? `<span class="verified"><i class="fas fa-ticket"></i> Verified Seller</span>`
-                    : `<span class="unverified"><i class="fas fa-triangle-exclamation"></i> Unverified Seller</span>`;
+                const badgeText = dealer.verified ? "Verified Seller" : "Unverified Seller";
+                const badgeClass = dealer.verified ? "verified" : "unverified";
 
                 dealerCard.innerHTML = `
                     <div class="dealer-header">
                         <div class="dealer-name">${dealer.name}</div>
-                        ${badge}
+                        <span class="${badgeClass}">
+                            <i class="fas fa-ticket"></i> ${badgeText}
+                        </span>
                     </div>
                     <div class="dealer-meta">
                         <i class="fas fa-location-dot"></i> ${dealer.location} &nbsp; | &nbsp;
                         <i class="fas fa-phone"></i> ${dealer.contact}
                     </div>
                     <div class="cars-grid">
-                        ${dealer.cars.map(car => `
-                            <div class="car-card">
-                                <img src="${car.images[0]}" alt="${car.make} ${car.model}">
-                                <div class="car-body">
-                                    <div class="car-title">
-                                        ${car.make} ${car.model}
+                        ${dealer.cars.map(car => {
+                            const message = `
+CAR ENQUIRY – SENTINEL NEXUS CARS
+
+Dealer: ${dealer.name}
+Status: ${badgeText}
+Location: ${dealer.location}
+
+Car: ${car.make} ${car.model}
+Year: ${car.year}
+Price: $${car.price_usd.toLocaleString()}
+
+I am interested in this vehicle. Please assist.
+                            `.trim();
+
+                            const whatsappLink =
+                                "https://wa.me/263787556929?text=" +
+                                encodeURIComponent(message);
+
+                            return `
+                                <div class="car-card">
+                                    <img src="${car.images[0]}" alt="${car.make} ${car.model}">
+                                    <div class="car-body">
+                                        <div class="car-title">${car.make} ${car.model}</div>
+                                        <div class="car-year">${car.year}</div>
+                                        <div class="car-price">$${car.price_usd.toLocaleString()}</div>
                                     </div>
-                                    <div class="car-year">
-                                        ${car.year}
-                                    </div>
-                                    <div class="car-price">
-                                        $${car.price_usd.toLocaleString()}
-                                    </div>
+                                    <a href="${whatsappLink}" target="_blank" class="contact-btn">
+                                        <i class="fab fa-whatsapp"></i> Enquire on WhatsApp
+                                    </a>
                                 </div>
-                            </div>
-                        `).join("")}
+                            `;
+                        }).join("")}
                     </div>
                 `;
 
